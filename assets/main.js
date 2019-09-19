@@ -44,25 +44,33 @@
     //..................................................
     
     function containsVowel(word){
-        var vowelList = "alpha" 
+        var vowelList = "aeiou" 
         var result = word.indexOf(vowelList)
 
-        // return result 
+        let foundVowel = false
+        for(let i = 0; i < vowelList.length; i++){
 
-        if(result == -1){
-            return false
-        }else {
-            return true
+           result = word.indexOf(vowelList[i])
+           if(result == -1){
+            
+            }else {
+            foundVowel = true 
+
         }
 
+            // console.log(vowelList[i])
+        } 
+
+        return (foundVowel)
+
     }
-        // console.log(containsVowel("alpha"))
+        console.log(containsVowel("alpha"))
 
     //.....................................................
 
 
     function pigLatin(hello){
-        
+
     }
 
 
