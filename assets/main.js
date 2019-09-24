@@ -1,10 +1,10 @@
 (function(){
     function sum(number1, number2){
         // console.log(number1 + number2)
-
+            return (number1 + number2)
     }
-    sum(5,9)
-    sum(13,8)
+    // console.log (sum(5,9))
+    // console.log (sum(13,8))
 
     //.............................................
 
@@ -29,6 +29,22 @@
     // console.log(greaterThan(4000, 45))
 
     //................................................
+    // function firstLargest(numberArray){
+    //     let firstNumber = 0;
+
+    //     for (let i = 0; i < numberArray.length; i++){
+    //         // console.log(numberArray[i])
+    //         if (firstNumber < numberArray[i]){
+    //             firstNumber = numberArray[i]
+                
+    //         }
+    //     }
+    //     return firstNumber
+    // }
+    // console.log (firstLargest([3, 1, 5, 2, 3, 4]))
+
+    //..................................................
+
 
     function secondLargest(){
         var array = [4, 2, 10];
@@ -64,15 +80,41 @@
         return (foundVowel)
 
     }
-        console.log(containsVowel("alpha"))
+        // console.log(containsVowel("alpha"))
 
     //.....................................................
 
 
     function pigLatin(hello){
-
+        
     }
 
+
+    //.....................................................
+
+    function longestWord(sentence){
+        
+        let wordArray = sentence.split(' ');
+        let longestWord = ""
+
+        // console.log(wordArray);
+        for(let i = 0; i < wordArray.length; i++){
+            // console.log(wordArray[i])
+            let currentWord = wordArray[i]
+            let currentwordLength = wordArray[i].length
+
+        if (currentwordLength > longestWord.length)
+            longestWord = currentWord 
+        }
+        
+        return longestWord
+    }
+    
+    console.log (longestWord('have you ever seen a penguin go to tea?')); 
+
+    
+
+    
 
 
 
